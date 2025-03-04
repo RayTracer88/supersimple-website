@@ -1,0 +1,151 @@
+.thumbnail {
+  width: 100%;
+}
+
+.video-title {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-family: roboto, arial;
+  color: black;
+
+
+}
+
+.video-preview {
+}
+
+.channel-picture {
+  position: relative;
+}
+
+.video-info {
+}
+
+.profile-picture {
+  width: 36px;
+  border-radius: 20px;
+}
+
+.thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.video-author, 
+.video-stats {
+  font-size: 12px;
+  color: rgb(95, 95, 95);
+  display: block;
+  
+}
+
+.video-author {
+  margin-bottom: 4px;
+  text-decoration: none;
+  font-family: roboto, arial;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+
+}
+
+.video-grid {
+  display: grid;
+ 
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+    .video-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+
+  }
+}
+
+
+
+.video-time {
+  font-family: roboto;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+}
+
+.channel-popup {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  z-index: 200;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.channel-picture:hover .channel-popup {
+  opacity: 1;
+
+}
+
+.picture-popup {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 30px;
+  margin-right: 12px;
+
+
+}
+
+.author-popup {
+  white-space: nowrap;
+  font-style: roboto, arial;
+  font-weight: bold;
+
+
+}
+
+.subs-popup {
+  color: gray;
+  white-space: nowrap;
+
+
+}
+
+.text-popup {
+  
+
+}
